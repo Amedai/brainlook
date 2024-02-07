@@ -1,0 +1,12 @@
+.block-header{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 99.9%; /* 39.96px */
+    margin:20px 0;
+    &_stage{
+        font-style: normal;
+        background: linear-gradient(to bottom,#fff 20%,rgba($color: #fff, $alpha: 0.6));
+        margin-bottom: 0;
+    }
+}

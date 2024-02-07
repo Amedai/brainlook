@@ -1,0 +1,166 @@
+.case{
+    position: relative;
+    padding-top: 80px;
+    padding-left: 50px;
+    &__behind{
+        position: absolute;
+        top: 80px;
+        right:0;
+        z-index: -1;
+    }
+    &__intro{
+        display: flex;
+        justify-content: end;
+        align-items: last baseline;
+        gap: 10px;
+        padding-right: 40px;
+        &-link{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 131.9%;
+            width: 150px;
+        }
+    }
+    &__slider{
+        position: relative;
+        /* overflow:visible; */
+        padding: 111px 15px 0 0;
+        margin-top: 10px;
+        width: 95%;
+        height: 580px;
+        .swiper-slide-active{
+            .case__slider{
+                &-link{
+                    transition: 2s all;
+                    display: block;
+                }
+                &-item{
+                    transition: 2s all;
+                    transform: rotate(-6.405deg);
+                }
+                &-back{
+                    transition: 2s all;
+                    transform: rotate(13.405deg);
+                    translate: 70px -81px;
+                }
+                
+            }  
+        }
+        &-item{
+            transition: 2s all;
+            margin:0 auto;
+            position: relative;
+            width: 400px;
+            height: 530px;
+            img{
+            display: block;
+            border-radius: 50px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+            &_active{
+                .case__slider{
+                    &-link{
+                        transition: 2s all;
+                        display: block;
+                    }
+                    &-item{
+                        transition: 2s all;
+                        transform: rotate(-6.405deg);
+                    }
+                    &-back{
+                        transition: 2s all;
+                        transform: rotate(13.405deg);
+                        translate: 70px -81px;
+                    }
+                }
+            }
+        }
+        &-front{
+            width: 400px;
+            height: 490px;
+            position: absolute;
+            top: 0;
+            left:0;
+            z-index: 2;
+            border-radius: 50px;
+            border: 2px solid var(--text-white-main);
+        }
+    
+        &-back{
+            transition: 2s all;
+            width: 400px;
+            height: 490px;
+            position: absolute;
+            top: 0;
+            left:0;
+            z-index: 1;
+            border-radius: 50px;
+            border: 2px solid var(--text-green);
+        }
+        &-link{
+            transition: 2s all;
+            position: absolute;
+            bottom:80px;
+            left:50%;
+            transform: translateX(-50%);
+            z-index: 5;
+            border-radius: 50px;
+            border: 2px solid var(--text-green);
+            background: var(--text-green);
+            font-family: var(--font-raleway);
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 2.56px;
+            width: 90%;
+            text-align: center;
+            padding: 15px 10px;
+            display: none;
+
+        }
+        &-text{
+            position: absolute;
+            left:0;
+            bottom:0;
+            right:0;
+            height: 40px;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 99.9%; /* 35.964px */
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+        .swiper-scrollbar{
+            position: absolute;
+            height: 16px;
+            border-radius: 10px;
+            background-color: rgba(57, 226, 43, 0.43);
+            width: 70%;
+            bottom: 0;
+            left: 65%;
+            transform: translateX(-50%);
+            .swiper-scrollbar-drag{
+                height: 16px;
+                border-radius: 10px;
+                background: var(--text-green);
+            }
+        }
+        /* &-scrollbar{
+            position: absolute;
+            height: 16px;
+            border-radius: 10px;
+            background-color: rgba(57, 226, 43, 0.43);
+            width: 70%;
+            bottom: 0;
+            left: 65%;
+            transform: translateX(-50%);
+            &-drag{
+                height: 16px;
+                border-radius: 10px;
+                background: var(--text-green);
+            }
+        } */
+    }
+}

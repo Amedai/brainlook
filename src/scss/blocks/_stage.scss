@@ -1,0 +1,44 @@
+.stage{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+    &__behind{
+        position: absolute;
+        top:150px;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    &__list{
+        padding: 0 120px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: minmax(300px,auto);
+        gap: 85px 80px;
+        counter-reset: myCounter;
+    }
+    &__item{
+        padding-left: 150px;
+        position: relative;
+        &:before{
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            position: absolute;
+            z-index: -2;
+            left:30px;
+            top: -22px;
+            width: 165px;
+            height: 165px;
+            background-image: url('../images/stage-eclipse.svg');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 96px;
+            font-weight: 700;
+        }
+        &-text{
+            margin-top: 0;
+            padding-top: 10px;
+            background-color: rgba($color: #fff, $alpha: 0.5);
+        }
+    }
+}

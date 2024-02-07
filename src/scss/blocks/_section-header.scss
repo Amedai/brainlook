@@ -1,0 +1,27 @@
+.section-header{
+    font-family: var(--font-raleway);
+    font-size: 96px;
+    font-weight: 700;
+    &_green{
+        color:var(--text-green);
+    }
+    &_service{
+        position: absolute;
+        left:0;
+        top: 140px;
+        padding-left: 70px;
+        margin-top: 15px;
+    }
+    &_stage{
+        text-align: center;
+        margin-top: 65px;
+    }
+    &_bid{
+        color:var(--text-white-main);
+        margin: 0;
+        line-height: 94.9%; 
+    }
+    &_case{
+        margin-bottom: 0;
+    }
+}   

@@ -1,0 +1,49 @@
+.footer{
+    padding: 50px 40px 30px 40px;
+    background-color: var(--text-green);
+    display: flex;
+    justify-content: space-between;
+    color:var(--text-white-main);
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    &__intro{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        &-text{
+            padding-top: 25px;
+        }
+    }
+    &__phone{
+        margin-top: 40px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &__city{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &__social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        gap: 50px;
+        &-text{
+            font-size: 24px;
+            font-weight: 500;
+            padding-top: 25px;
+            width: 80%;
+            text-align:right;
+        }
+        &-link{
+            display: flex;
+            gap: 25px;
+            justify-content: end;
+        }
+    }
+}

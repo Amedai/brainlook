@@ -1,0 +1,23 @@
+.header{
+    position: absolute;
+    left:0;
+    right: 0;
+    z-index: 3;
+    top: 29px;
+    width: 100%;
+    color:var(--text-white-main);
+    &__menu{
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        &-item{
+            &_green{
+                color:var(--text-green);
+                font-weight: 600;
+            }
+        }
+    }
+}
